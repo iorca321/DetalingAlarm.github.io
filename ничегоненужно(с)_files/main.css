@@ -1,0 +1,280 @@
+html,
+body,
+.wrapper {
+    height: 100%;
+}
+.content{
+    padding-top: 60px;
+    min-height: 400px;
+}
+.personal-tbl tr{
+    cursor: pointer;
+}
+footer{
+    background: #f8f8f8;
+    margin-top:40px;
+}
+
+.content {
+
+}
+.alert-box{
+    position: fixed;
+    top:-75px;
+    left:0;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    width:100%;
+    background: #ffff00;
+    opacity: 0.7;
+    z-index: 999999;
+}
+.fc-content-skeleton td{
+    cursor: pointer;
+}
+.help-icon img{
+    width: 36px;
+}
+.replic-exists-list ul{
+    list-style: none;
+    height: 300px;
+    overflow: auto;
+}
+
+.content {
+    box-sizing: border-box;
+    min-height: 100%;
+    padding-bottom: 131px;
+}
+footer {
+    height: 121px;
+    margin-top: -121px;
+}
+
+.pay-method {
+    float: left;
+    /*height: 345px;*/
+    margin: 0px 10px 0;
+    padding-top: 10px;
+    text-align: center;
+    width: 139px;
+    display: inline-block;
+}
+.pay-method label {
+    background: #fff none repeat scroll 0 0;
+    cursor: pointer;
+    display: block;
+    height: 123px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.pay-method img {
+    height: 38px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 38px;
+}
+.pay-method p {
+    margin: 0;
+    padding: 0;
+}
+.pay-method label{
+    font-weight: normal;
+}
+.pay-method p:nth-child(3n) {
+    margin-bottom: 30px;
+}
+.shadow {
+    border-radius: 5px;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);*/
+    border:1px solid #337ab7;
+}
+
+.compile-panel {
+    background: #000 none repeat scroll 0 0;
+    left: 0;
+    opacity: 0.85;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.compile-menu {
+    color: #fff;
+    list-style: outside none none;
+    margin: 0 auto;
+    position: relative;
+    width: 1000px;
+}
+.compile-panel select {
+    float: left;
+    margin-right: 10px;
+}
+.compile-panel ul {
+    float: left;
+    line-height: 24px;
+    list-style: outside none none;
+    margin: 0;
+}
+.compile-menu a {
+    text-decoration: none;
+}
+.compile-panel ul li {
+    float: left;
+    margin: 0 10px;
+    position: relative;
+}
+.compile-panel ul li a {
+    color: #fff;
+}
+.compile-panel li ul {
+    background: #515151 none repeat scroll 0 0;
+    display: none;
+    left: -3px;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0 0 10px;
+    position: absolute;
+    top: 23px;
+    width: 170px;
+}
+.compile-panel li ul li {
+    height: 14px;
+    margin: 5px 10px;
+}
+.compile-panel li:hover ul {
+    display: block;
+}
+.tarif-box{
+    border:1px solid #fff;
+}
+.active-tarif-box{
+    border:1px solid red;
+}
+.active-tarif-box .panel-heading{
+    background: red;
+}
+.help-page img{
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+.line-through{
+    position: relative;
+    top:-10px;
+}
+.line-through:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    left:0;
+    top:50%;
+    height: 0;
+    border:2px solid #000;
+    margin-top:-2px;
+
+}
+.new-price{
+    position: absolute;
+    left: 0;
+    top: 24px;
+    width: 111px;
+    font-size:22px;
+    text-align: left;
+    color:red;
+}
+.price-m-box{
+    position: relative;
+}
+.sale{
+    position: absolute;
+    left: -4px;
+    top: -16px;
+    width: 62px;
+}
+.date-ac{
+    position: absolute;
+    font-size:12px;
+    left: 2px;
+    top: 27px;
+    font-weight: bold;
+}
+#supportTrigger:hover{
+    right:3px;
+}
+.navbar-fixed-top, .navbar-fixed-bottom {
+    z-index: 100;
+}
+@media (min-width: 1px) and (max-width: 400px) {
+    #reformal_tab{
+        display: none !important;
+    }
+}
+
+.loading {
+    -moz-user-select: none;
+    opacity: 0.2;
+    pointer-events: none;
+    position: relative;
+    transition: opacity 0.5s ease 0s;
+    padding-top:5px;
+}
+.loading.loading-opaque {
+    opacity: 1;
+}
+@keyframes loading {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 90%;
+    }
+}
+@keyframes loading {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 90%;
+    }
+}
+
+.loading::before {
+    animation: 3s linear 0s normal none infinite running loading;
+    background: #375682 none repeat scroll 0 0;
+    content: "";
+    height: 1px;
+    position: absolute;
+    width: 10%;
+    z-index: 2;
+}
+
+
+
+@-moz-keyframes rotate360 {
+    to { -moz-transform: rotate(360deg); -ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-webkit-keyframes rotate360 {
+    to { -moz-transform: rotate(360deg); -ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@keyframes rotate360 {
+    to { -moz-transform: rotate(360deg); -ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+.img-rounded { -moz-animation: 2s rotate360 infinite linear; -webkit-animation: 2s rotate360 infinite linear; animation: 2s rotate360 infinite linear; }
+
+.loader {
+    display: none;
+}
+
+.loading .loader{
+    display:block;
+}
+
+#choose-type-of-script .modal-dialog{
+    width:900px;
+}
